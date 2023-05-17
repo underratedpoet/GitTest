@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace GitTestApp.Run
@@ -28,8 +29,13 @@ namespace GitTestApp.Run
         {
             if (!File.Exists(filePath)) throw new FileNotFoundException("not found");
 
+            string jsonString = File.ReadAllText(filePath);
 
+            List<Workout>? workouts = JsonSerializer.Deserialize<List<Workout>>(jsonString);
 
+            if (workouts == null) throw new ArgumentNullException(nameof(workouts));
+
+            Workouts = workouts;
         }
     }
 }
