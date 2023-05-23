@@ -75,14 +75,15 @@
             tabPageHouses.Text = "Жилье";
             tabPageHouses.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // View
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(tabControl1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "View";
+            Text = "App";
+            Load += View_Load;
             tabControl1.ResumeLayout(false);
             ResumeLayout(false);
         }

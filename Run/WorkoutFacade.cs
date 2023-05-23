@@ -12,9 +12,16 @@ namespace GitTestApp.Run
         static WorkoutFacade()
         {
             Workouts = new List<Workout> { new Workout() };
+            _lastMonth = DateTime.Now.AddMonths(-1);
+            TotalDuration = 0;
+            TotalDistance = 0;
+            MinSpeed = uint.MaxValue;
+            MaxSpeed = 0;
         }
 
         public static List<Workout> Workouts;
+
+        private static DateTime _lastMonth;
 
         public static decimal TotalDistance { get; private set; }
         public static decimal TotalDuration { get; private set; }
@@ -36,6 +43,47 @@ namespace GitTestApp.Run
             if (workouts == null) throw new ArgumentNullException(nameof(workouts));
 
             Workouts = workouts;
+
+            DeleteWrong();
+
+            FindValues();
+        }
+
+        private static void DeleteWrong()
+        {
+            List<int> indexes = new List<int>();
+
+            foreach (Workout workout in Workouts)
+            {
+                if (workout.Date < _lastMonth) indexes.Add(Workouts.IndexOf(workout));
+            }
+
+            foreach (int index in indexes) Workouts.Remove(Workouts[index]);
+        }
+
+        private static void FindValues()
+        {
+            uint count = 0;
+            uint pulsSum = 0;
+            uint speedSum = 0;
+
+            foreach (Workout workout in Workouts)
+            {
+                if (workout.MinSpeed < MinSpeed) MinSpeed = workout.MinSpeed;
+                if (workout.MaxSpeed > MaxSpeed) MaxSpeed = workout.MaxSpeed;
+
+                speedSum += workout.AvgSpeed;
+                pulsSum += workout.AvgPulse;
+
+                TotalDistance += workout.Distance;
+                TotalDuration += workout.Duration;
+
+                count++;
+            }
+
+            AvgDuration = TotalDuration / count;
+            AvgPulse = pulsSum / count;
+            AvgSpeed = speedSum / count;
         }
     }
 }

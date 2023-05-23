@@ -1,3 +1,6 @@
+using GitTestApp.Run;
+
+
 namespace GitTestApp
 {
     public partial class View : Form
@@ -5,6 +8,12 @@ namespace GitTestApp
         public View()
         {
             InitializeComponent();
+            WorkoutFacade.UploadInfo("Run\\workout_info.json");
+        }
+
+        private void View_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
