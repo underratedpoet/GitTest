@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -53,12 +54,17 @@ namespace GitTestApp.Run
         {
             List<int> indexes = new List<int>();
 
-            foreach (Workout workout in Workouts)
+            for (int i = 0; i < Workouts.Count(); i++)
             {
-                if (workout.Date < _lastMonth) indexes.Add(Workouts.IndexOf(workout));
+                if (Workouts[i].Date < _lastMonth ||
+                    Workouts[i].Date > DateTime.Today)
+                { 
+                    Workouts.Remove(Workouts[i]);
+                    i--;
+                }
             }
 
-            foreach (int index in indexes) Workouts.Remove(Workouts[index]);
+
         }
 
         private static void FindValues()
