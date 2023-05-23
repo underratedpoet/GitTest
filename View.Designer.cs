@@ -31,8 +31,18 @@
             tabControl1 = new TabControl();
             tabPageRun = new TabPage();
             tabPageTemp = new TabPage();
+            dateTimePicker1 = new DateTimePicker();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            button1 = new Button();
             tabPageHouses = new TabPage();
+            button2 = new Button();
             tabControl1.SuspendLayout();
+            tabPageTemp.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -40,50 +50,143 @@
             tabControl1.Controls.Add(tabPageRun);
             tabControl1.Controls.Add(tabPageTemp);
             tabControl1.Controls.Add(tabPageHouses);
-            tabControl1.Location = new Point(12, 12);
+            tabControl1.Location = new Point(10, 9);
+            tabControl1.Margin = new Padding(3, 2, 3, 2);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(776, 426);
+            tabControl1.Size = new Size(679, 320);
             tabControl1.TabIndex = 0;
             // 
             // tabPageRun
             // 
-            tabPageRun.Location = new Point(4, 29);
+            tabPageRun.Location = new Point(4, 24);
+            tabPageRun.Margin = new Padding(3, 2, 3, 2);
             tabPageRun.Name = "tabPageRun";
-            tabPageRun.Padding = new Padding(3);
-            tabPageRun.Size = new Size(768, 393);
+            tabPageRun.Padding = new Padding(3, 2, 3, 2);
+            tabPageRun.Size = new Size(671, 292);
             tabPageRun.TabIndex = 0;
             tabPageRun.Text = "Пробежки";
             tabPageRun.UseVisualStyleBackColor = true;
             // 
             // tabPageTemp
             // 
-            tabPageTemp.Location = new Point(4, 29);
+            tabPageTemp.Controls.Add(button2);
+            tabPageTemp.Controls.Add(dateTimePicker1);
+            tabPageTemp.Controls.Add(label3);
+            tabPageTemp.Controls.Add(label2);
+            tabPageTemp.Controls.Add(label1);
+            tabPageTemp.Controls.Add(textBox3);
+            tabPageTemp.Controls.Add(textBox2);
+            tabPageTemp.Controls.Add(textBox1);
+            tabPageTemp.Controls.Add(button1);
+            tabPageTemp.Location = new Point(4, 24);
+            tabPageTemp.Margin = new Padding(3, 2, 3, 2);
             tabPageTemp.Name = "tabPageTemp";
-            tabPageTemp.Padding = new Padding(3);
-            tabPageTemp.Size = new Size(768, 393);
+            tabPageTemp.Padding = new Padding(3, 2, 3, 2);
+            tabPageTemp.Size = new Size(671, 292);
             tabPageTemp.TabIndex = 1;
             tabPageTemp.Text = "Температура";
             tabPageTemp.UseVisualStyleBackColor = true;
+            tabPageTemp.Click += tabPageTemp_Click;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(23, 51);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.TabIndex = 9;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(288, 154);
+            label3.Name = "label3";
+            label3.Size = new Size(86, 15);
+            label3.TabIndex = 8;
+            label3.Text = "Минимальная";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(302, 105);
+            label2.Name = "label2";
+            label2.Size = new Size(53, 15);
+            label2.TabIndex = 7;
+            label2.Text = "Средняя";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(288, 54);
+            label1.Name = "label1";
+            label1.Size = new Size(90, 15);
+            label1.TabIndex = 6;
+            label1.Text = "Максимальная";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(399, 151);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(100, 23);
+            textBox3.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(399, 102);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 4;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(399, 51);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 3;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(528, 249);
+            button1.Name = "button1";
+            button1.Size = new Size(120, 21);
+            button1.TabIndex = 1;
+            button1.Text = "Показать график";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += buttonTemp;
             // 
             // tabPageHouses
             // 
-            tabPageHouses.Location = new Point(4, 29);
+            tabPageHouses.Location = new Point(4, 24);
+            tabPageHouses.Margin = new Padding(3, 2, 3, 2);
             tabPageHouses.Name = "tabPageHouses";
-            tabPageHouses.Size = new Size(768, 393);
+            tabPageHouses.Size = new Size(671, 292);
             tabPageHouses.TabIndex = 2;
             tabPageHouses.Text = "Жилье";
             tabPageHouses.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // button2
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            button2.Location = new Point(37, 251);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 10;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // View
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(tabControl1);
-            Name = "Form1";
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "View";
             Text = "Form1";
             tabControl1.ResumeLayout(false);
+            tabPageTemp.ResumeLayout(false);
+            tabPageTemp.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -93,5 +196,14 @@
         private TabPage tabPageRun;
         private TabPage tabPageTemp;
         private TabPage tabPageHouses;
+        private Button button1;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private DateTimePicker dateTimePicker1;
+        private Button button2;
     }
 }
