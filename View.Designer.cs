@@ -30,6 +30,11 @@
         {
             tabControl1 = new TabControl();
             tabPageRun = new TabPage();
+            label2 = new Label();
+            label1 = new Label();
+            pictureBoxMin = new PictureBox();
+            button1 = new Button();
+            pictureBoxPulse = new PictureBox();
             tabPageTemp = new TabPage();
             monthCalendar1 = new MonthCalendar();
             label3 = new Label();
@@ -41,6 +46,9 @@
             button1 = new Button();
             tabPageHouses = new TabPage();
             tabControl1.SuspendLayout();
+            tabPageRun.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxMin).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPulse).BeginInit();
             tabPageTemp.SuspendLayout();
             SuspendLayout();
             // 
@@ -58,6 +66,12 @@
             // 
             // tabPageRun
             // 
+            tabPageRun.Controls.Add(label2);
+            tabPageRun.Controls.Add(label1);
+            tabPageRun.Controls.Add(pictureBoxMin);
+            tabPageRun.Controls.Add(button1);
+            tabPageRun.Controls.Add(pictureBoxPulse);
+            tabPageRun.Location = new Point(4, 29);
             tabPageRun.Location = new Point(4, 24);
             tabPageRun.Margin = new Padding(3, 2, 3, 2);
             tabPageRun.Name = "tabPageRun";
@@ -66,6 +80,52 @@
             tabPageRun.TabIndex = 0;
             tabPageRun.Text = "Пробежки";
             tabPageRun.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(6, 142);
+            label2.Name = "label2";
+            label2.Size = new Size(421, 20);
+            label2.TabIndex = 4;
+            label2.Text = "Изменения длительности тренировок за последний месяц";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(6, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(415, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Изменения пульса во время занятий за последний месяц";
+            // 
+            // pictureBoxMin
+            // 
+            pictureBoxMin.BorderStyle = BorderStyle.Fixed3D;
+            pictureBoxMin.Location = new Point(6, 165);
+            pictureBoxMin.Name = "pictureBoxMin";
+            pictureBoxMin.Size = new Size(415, 177);
+            pictureBoxMin.TabIndex = 2;
+            pictureBoxMin.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(6, 348);
+            button1.Name = "button1";
+            button1.Size = new Size(756, 39);
+            button1.TabIndex = 1;
+            button1.Text = "Загрузить данные";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += buttonLoad_Click;
+            // 
+            // pictureBoxPulse
+            // 
+            pictureBoxPulse.BorderStyle = BorderStyle.Fixed3D;
+            pictureBoxPulse.Location = new Point(6, 32);
+            pictureBoxPulse.Name = "pictureBoxPulse";
+            pictureBoxPulse.Size = new Size(415, 107);
+            pictureBoxPulse.TabIndex = 0;
+            pictureBoxPulse.TabStop = false;
             // 
             // tabPageTemp
             // 
@@ -168,10 +228,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(700, 338);
             Controls.Add(tabControl1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "View";
-            Text = "Form1";
+            Text = "App";
+            Load += View_Load;
             tabControl1.ResumeLayout(false);
+            tabPageRun.ResumeLayout(false);
+            tabPageRun.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxMin).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPulse).EndInit();
             tabPageTemp.ResumeLayout(false);
             tabPageTemp.PerformLayout();
             ResumeLayout(false);
@@ -183,6 +247,11 @@
         private TabPage tabPageRun;
         private TabPage tabPageTemp;
         private TabPage tabPageHouses;
+        private Button button1;
+        private PictureBox pictureBoxPulse;
+        private PictureBox pictureBoxMin;
+        private Label label2;
+        private Label label1;
         private Button button1;
         private Label label3;
         private Label label2;

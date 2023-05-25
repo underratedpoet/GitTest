@@ -19,6 +19,19 @@ namespace GitTestApp.Run
             AvgPulse = 80;
         }
 
+        public Workout(DateTime date, decimal duration, decimal distance, uint avgSpeed, 
+            uint minSpeed, uint maxSpeed, uint avgPulse)
+        {
+            Date = date;
+            Duration = duration;
+            Distance = distance;
+            Distance = distance;
+            AvgSpeed = avgSpeed;
+            MinSpeed = minSpeed;
+            MaxSpeed = maxSpeed;
+            AvgPulse = avgPulse;
+        }
+
         private DateTime _date;
         public string? Weekday { get; private set; }
 
@@ -54,10 +67,10 @@ namespace GitTestApp.Run
             }
         }
 
-        public uint AvgSpeed;
-        public uint MinSpeed;
-        public uint MaxSpeed;
-        public uint AvgPulse;
+        public uint AvgSpeed { get; set; }
+        public uint MinSpeed { get; set; }
+        public uint MaxSpeed { get; set; }
+        public uint AvgPulse { get; set; }
 
 
     }
