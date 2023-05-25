@@ -36,9 +36,10 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(12, 49);
+            pictureBox1.Location = new Point(14, 13);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(728, 228);
+            pictureBox1.Size = new Size(832, 356);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -46,31 +47,33 @@
             // richTextBox1
             // 
             richTextBox1.BorderStyle = BorderStyle.None;
-            richTextBox1.Location = new Point(409, 302);
+            richTextBox1.Location = new Point(467, 403);
+            richTextBox1.Margin = new Padding(3, 4, 3, 4);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.ReadOnly = true;
             richTextBox1.ScrollBars = RichTextBoxScrollBars.None;
-            richTextBox1.Size = new Size(331, 23);
+            richTextBox1.Size = new Size(378, 31);
             richTextBox1.TabIndex = 1;
             richTextBox1.Text = "";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(163, 302);
+            label1.Location = new Point(186, 403);
             label1.Name = "label1";
-            label1.Size = new Size(240, 15);
+            label1.Size = new Size(304, 20);
             label1.TabIndex = 2;
             label1.Text = "Самый резкий перепад температуры был:";
             // 
             // ViewTemp
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(752, 355);
+            ClientSize = new Size(859, 473);
             Controls.Add(label1);
             Controls.Add(richTextBox1);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ViewTemp";
             Text = "ViewTemp";
             Load += ViewTemp_Load;

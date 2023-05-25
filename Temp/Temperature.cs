@@ -32,31 +32,31 @@ namespace GitTestApp.Temp
 
             Point[] points = new Point[temps.Count];
 
-            Pen MaxPen = new Pen(Color.Red, 1);
+            Pen MaxPen = new Pen(Color.Red, 1f);
             for (int i = 0; i < temps.Count; i++)
             {
-                points[i] = new Point(i * 25, -temps[i].MaxTemp * 5 + 125);
+                points[i] = new Point(i * 25, -1*temps[i].MaxTemp * 5 + 125);
             }
             graphics.DrawLines(MaxPen, points);
 
-            Pen MinPen = new Pen(Color.Blue, 1);
+            Pen MinPen = new Pen(Color.Blue, 1f);
             for (int i = 0; i < 30; i++)
             {
-                points[i] = new Point(i * 25, -temps[i].MinTemp * 5 + 125);
+                points[i] = new Point(i * 25, -1*temps[i].MinTemp * 5 + 125);
             }
             graphics.DrawLines(MinPen, points);
 
-            Pen AvgPen = new Pen(Color.Gray, 1);
+            Pen AvgPen = new Pen(Color.Gray, 1f);
             for (int i = 0; i < 30; i++)
             {
-                points[i] = new Point(i * 25, -temps[i].AvgTemp * 5 + 125);
+                points[i] = new Point(i * 25, -1*temps[i].AvgTemp * 5 + 125);
             }
             graphics.DrawLines(AvgPen, points);
         }
 
         public void ReadFromFile(List<Temperature> temps)
         {
-            StreamReader reader = new StreamReader("c:/Users/Admin/Source/Repos/underratedpoet/GitTest/Temp/Temperature.txt");
+            StreamReader reader = new StreamReader("Temp/Temperature.txt");
 
             DateTime date;
             int maxTemp; 
