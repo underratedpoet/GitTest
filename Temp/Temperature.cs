@@ -56,7 +56,7 @@ namespace GitTestApp.Temp
 
         public void ReadFromFile(List<Temperature> temps)
         {
-            StreamReader reader = new StreamReader("c:/Users/Admin/Desktop/Temperature.txt");
+            StreamReader reader = new StreamReader("c:/Users/Admin/Source/Repos/underratedpoet/GitTest/Temp/Temperature.txt");
 
             DateTime date;
             int maxTemp; 
