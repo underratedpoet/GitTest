@@ -72,7 +72,7 @@
             tabPageRun.Controls.Add(pictureBoxPulse);
             tabPageRun.Location = new Point(4, 29);
             tabPageRun.Name = "tabPageRun";
-            tabPageRun.Padding = new Padding(3, 3, 3, 3);
+            tabPageRun.Padding = new Padding(3);
             tabPageRun.Size = new Size(877, 409);
             tabPageRun.TabIndex = 0;
             tabPageRun.Text = "Пробежки";
@@ -81,7 +81,7 @@
             // labelMin
             // 
             labelMin.AutoSize = true;
-            labelMin.Location = new Point(7, 189);
+            labelMin.Location = new Point(7, 163);
             labelMin.Name = "labelMin";
             labelMin.Size = new Size(421, 20);
             labelMin.TabIndex = 4;
@@ -99,19 +99,19 @@
             // pictureBoxMin
             // 
             pictureBoxMin.BorderStyle = BorderStyle.Fixed3D;
-            pictureBoxMin.Location = new Point(7, 213);
+            pictureBoxMin.Location = new Point(7, 187);
             pictureBoxMin.Margin = new Padding(3, 4, 3, 4);
             pictureBoxMin.Name = "pictureBoxMin";
-            pictureBoxMin.Size = new Size(474, 129);
+            pictureBoxMin.Size = new Size(474, 166);
             pictureBoxMin.TabIndex = 2;
             pictureBoxMin.TabStop = false;
             // 
-            // buttonUpload
+            // buttonLoad
             // 
-            buttonLoad.Location = new Point(7, 350);
+            buttonLoad.Location = new Point(7, 361);
             buttonLoad.Margin = new Padding(3, 4, 3, 4);
-            buttonLoad.Name = "buttonUpload";
-            buttonLoad.Size = new Size(864, 52);
+            buttonLoad.Name = "buttonLoad";
+            buttonLoad.Size = new Size(474, 41);
             buttonLoad.TabIndex = 1;
             buttonLoad.Text = "Загрузить данные";
             buttonLoad.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@
             pictureBoxPulse.Location = new Point(7, 43);
             pictureBoxPulse.Margin = new Padding(3, 4, 3, 4);
             pictureBoxPulse.Name = "pictureBoxPulse";
-            pictureBoxPulse.Size = new Size(474, 141);
+            pictureBoxPulse.Size = new Size(474, 116);
             pictureBoxPulse.TabIndex = 0;
             pictureBoxPulse.TabStop = false;
             // 
@@ -139,7 +139,7 @@
             tabPageTemp.Controls.Add(button1);
             tabPageTemp.Location = new Point(4, 29);
             tabPageTemp.Name = "tabPageTemp";
-            tabPageTemp.Padding = new Padding(3, 3, 3, 3);
+            tabPageTemp.Padding = new Padding(3);
             tabPageTemp.Size = new Size(877, 409);
             tabPageTemp.TabIndex = 1;
             tabPageTemp.Text = "Температура";
@@ -220,7 +220,7 @@
             // 
             tabPageHouses.Location = new Point(4, 29);
             tabPageHouses.Name = "tabPageHouses";
-            tabPageHouses.Size = new Size(768, 473);
+            tabPageHouses.Size = new Size(877, 409);
             tabPageHouses.TabIndex = 2;
             tabPageHouses.Text = "Жилье";
             tabPageHouses.UseVisualStyleBackColor = true;

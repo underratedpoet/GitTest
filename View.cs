@@ -54,7 +54,7 @@ namespace GitTestApp
 
             for (int i = 0; i < points.Length; i++)
             {
-                points[i] = new Point(i * 28, -3 * (int)wkts[i].AvgPulse + 320);
+                points[i] = new Point(i * 36, -3 * (int)wkts[i].AvgPulse + 320);
             }
 
             graphics.DrawLines(pen, points);
@@ -63,7 +63,7 @@ namespace GitTestApp
 
             for (int i = 0; i < points.Length; i++)
             {
-                points[i] = new Point(i * 28, -5 * (int)wkts[i].Duration + 210);
+                points[i] = new Point(i * 36, -4 * (int)wkts[i].Duration + 210);
             }
 
             g.DrawLines(pen, points);
