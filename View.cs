@@ -22,17 +22,11 @@ namespace GitTestApp
             Temp.Show();
         }
 
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void monthCalendarDateChanged(object sender, DateRangeEventArgs e)
         {
-            string Date = dateTimePicker1.Value.ToShortDateString();
+            string Date = monthCalendar1.SelectionStart.ToShortDateString();
             temp.SearchTemp(temp.Temps, textBox1, textBox2, textBox3, Date);
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-            
         }
     }
 }

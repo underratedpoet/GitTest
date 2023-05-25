@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GitTestApp.Temp
 {
@@ -23,6 +24,34 @@ namespace GitTestApp.Temp
             MaxTemp = maxTemp;
             MinTemp = minTemp;
             AvgTemp = avgTemp;
+        }
+
+        public void TempGraphic(PictureBox box, List<Temperature> temps)
+        {
+            Graphics graphics = box.CreateGraphics();
+
+            Point[] points = new Point[temps.Count];
+
+            Pen MaxPen = new Pen(Color.Red, 1);
+            for (int i = 0; i < temps.Count; i++)
+            {
+                points[i] = new Point(i * 25, -temps[i].MaxTemp * 5 + 125);
+            }
+            graphics.DrawLines(MaxPen, points);
+
+            Pen MinPen = new Pen(Color.Blue, 1);
+            for (int i = 0; i < 30; i++)
+            {
+                points[i] = new Point(i * 25, -temps[i].MinTemp * 5 + 125);
+            }
+            graphics.DrawLines(MinPen, points);
+
+            Pen AvgPen = new Pen(Color.Gray, 1);
+            for (int i = 0; i < 30; i++)
+            {
+                points[i] = new Point(i * 25, -temps[i].AvgTemp * 5 + 125);
+            }
+            graphics.DrawLines(AvgPen, points);
         }
 
         public void ReadFromFile(List<Temperature> temps)

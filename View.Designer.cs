@@ -31,7 +31,7 @@
             tabControl1 = new TabControl();
             tabPageRun = new TabPage();
             tabPageTemp = new TabPage();
-            dateTimePicker1 = new DateTimePicker();
+            monthCalendar1 = new MonthCalendar();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -40,7 +40,6 @@
             textBox1 = new TextBox();
             button1 = new Button();
             tabPageHouses = new TabPage();
-            button2 = new Button();
             tabControl1.SuspendLayout();
             tabPageTemp.SuspendLayout();
             SuspendLayout();
@@ -70,8 +69,7 @@
             // 
             // tabPageTemp
             // 
-            tabPageTemp.Controls.Add(button2);
-            tabPageTemp.Controls.Add(dateTimePicker1);
+            tabPageTemp.Controls.Add(monthCalendar1);
             tabPageTemp.Controls.Add(label3);
             tabPageTemp.Controls.Add(label2);
             tabPageTemp.Controls.Add(label1);
@@ -89,13 +87,12 @@
             tabPageTemp.UseVisualStyleBackColor = true;
             tabPageTemp.Click += tabPageTemp_Click;
             // 
-            // dateTimePicker1
+            // monthCalendar1
             // 
-            dateTimePicker1.Location = new Point(23, 51);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 9;
-            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
+            monthCalendar1.Location = new Point(41, 37);
+            monthCalendar1.Name = "monthCalendar1";
+            monthCalendar1.TabIndex = 10;
+            monthCalendar1.DateChanged += monthCalendarDateChanged;
             // 
             // label3
             // 
@@ -165,16 +162,6 @@
             tabPageHouses.Text = "Жилье";
             tabPageHouses.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            button2.Location = new Point(37, 251);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 10;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
             // View
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -203,7 +190,6 @@
         private TextBox textBox3;
         private TextBox textBox2;
         private TextBox textBox1;
-        private DateTimePicker dateTimePicker1;
-        private Button button2;
+        private MonthCalendar monthCalendar1;
     }
 }
