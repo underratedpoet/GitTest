@@ -72,6 +72,10 @@ namespace GitTestApp.Run
             uint count = 0;
             uint pulsSum = 0;
             uint speedSum = 0;
+            TotalDuration = 0;
+            TotalDistance = 0;
+            MinSpeed = uint.MaxValue;
+            MaxSpeed = 0;
 
             foreach (Workout workout in Workouts)
             {
