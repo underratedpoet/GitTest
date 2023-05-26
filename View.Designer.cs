@@ -30,6 +30,13 @@
         {
             tabControl1 = new TabControl();
             tabPageRun = new TabPage();
+            textBoxDist = new TextBox();
+            textBoxAvDur = new TextBox();
+            textBoxDur = new TextBox();
+            textBoxPulse = new TextBox();
+            textBoxAvSpeed = new TextBox();
+            textBoxMaSpeed = new TextBox();
+            textBoxMiSpeed = new TextBox();
             labelMin = new Label();
             labelPulse = new Label();
             pictureBoxMin = new PictureBox();
@@ -45,6 +52,13 @@
             textBox1 = new TextBox();
             button1 = new Button();
             tabPageHouses = new TabPage();
+            labelAvPulse = new Label();
+            labelMaSpeed = new Label();
+            labelMiSpeed = new Label();
+            labelAvSpeed = new Label();
+            labelAvDur = new Label();
+            labelTotDur = new Label();
+            labelDist = new Label();
             tabControl1.SuspendLayout();
             tabPageRun.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxMin).BeginInit();
@@ -65,6 +79,20 @@
             // 
             // tabPageRun
             // 
+            tabPageRun.Controls.Add(labelDist);
+            tabPageRun.Controls.Add(labelTotDur);
+            tabPageRun.Controls.Add(labelAvDur);
+            tabPageRun.Controls.Add(labelAvSpeed);
+            tabPageRun.Controls.Add(labelMiSpeed);
+            tabPageRun.Controls.Add(labelMaSpeed);
+            tabPageRun.Controls.Add(labelAvPulse);
+            tabPageRun.Controls.Add(textBoxDist);
+            tabPageRun.Controls.Add(textBoxAvDur);
+            tabPageRun.Controls.Add(textBoxDur);
+            tabPageRun.Controls.Add(textBoxPulse);
+            tabPageRun.Controls.Add(textBoxAvSpeed);
+            tabPageRun.Controls.Add(textBoxMaSpeed);
+            tabPageRun.Controls.Add(textBoxMiSpeed);
             tabPageRun.Controls.Add(labelMin);
             tabPageRun.Controls.Add(labelPulse);
             tabPageRun.Controls.Add(pictureBoxMin);
@@ -77,6 +105,55 @@
             tabPageRun.TabIndex = 0;
             tabPageRun.Text = "Пробежки";
             tabPageRun.UseVisualStyleBackColor = true;
+            // 
+            // textBoxDist
+            // 
+            textBoxDist.Location = new Point(487, 326);
+            textBoxDist.Name = "textBoxDist";
+            textBoxDist.Size = new Size(180, 27);
+            textBoxDist.TabIndex = 5;
+            // 
+            // textBoxAvDur
+            // 
+            textBoxAvDur.Location = new Point(487, 238);
+            textBoxAvDur.Name = "textBoxAvDur";
+            textBoxAvDur.Size = new Size(180, 27);
+            textBoxAvDur.TabIndex = 5;
+            // 
+            // textBoxDur
+            // 
+            textBoxDur.Location = new Point(691, 284);
+            textBoxDur.Name = "textBoxDur";
+            textBoxDur.Size = new Size(180, 27);
+            textBoxDur.TabIndex = 5;
+            // 
+            // textBoxPulse
+            // 
+            textBoxPulse.Location = new Point(487, 43);
+            textBoxPulse.Name = "textBoxPulse";
+            textBoxPulse.Size = new Size(180, 27);
+            textBoxPulse.TabIndex = 5;
+            // 
+            // textBoxAvSpeed
+            // 
+            textBoxAvSpeed.Location = new Point(691, 132);
+            textBoxAvSpeed.Name = "textBoxAvSpeed";
+            textBoxAvSpeed.Size = new Size(180, 27);
+            textBoxAvSpeed.TabIndex = 5;
+            // 
+            // textBoxMaSpeed
+            // 
+            textBoxMaSpeed.Location = new Point(691, 43);
+            textBoxMaSpeed.Name = "textBoxMaSpeed";
+            textBoxMaSpeed.Size = new Size(180, 27);
+            textBoxMaSpeed.TabIndex = 5;
+            // 
+            // textBoxMiSpeed
+            // 
+            textBoxMiSpeed.Location = new Point(487, 132);
+            textBoxMiSpeed.Name = "textBoxMiSpeed";
+            textBoxMiSpeed.Size = new Size(180, 27);
+            textBoxMiSpeed.TabIndex = 5;
             // 
             // labelMin
             // 
@@ -111,7 +188,7 @@
             buttonLoad.Location = new Point(7, 361);
             buttonLoad.Margin = new Padding(3, 4, 3, 4);
             buttonLoad.Name = "buttonLoad";
-            buttonLoad.Size = new Size(474, 41);
+            buttonLoad.Size = new Size(864, 41);
             buttonLoad.TabIndex = 1;
             buttonLoad.Text = "Загрузить данные";
             buttonLoad.UseVisualStyleBackColor = true;
@@ -225,6 +302,69 @@
             tabPageHouses.Text = "Жилье";
             tabPageHouses.UseVisualStyleBackColor = true;
             // 
+            // labelAvPulse
+            // 
+            labelAvPulse.AutoSize = true;
+            labelAvPulse.Location = new Point(487, 12);
+            labelAvPulse.Name = "labelAvPulse";
+            labelAvPulse.Size = new Size(113, 20);
+            labelAvPulse.TabIndex = 6;
+            labelAvPulse.Text = "Средний пульс";
+            // 
+            // labelMaSpeed
+            // 
+            labelMaSpeed.AutoSize = true;
+            labelMaSpeed.Location = new Point(692, 12);
+            labelMaSpeed.Name = "labelMaSpeed";
+            labelMaSpeed.Size = new Size(179, 20);
+            labelMaSpeed.TabIndex = 6;
+            labelMaSpeed.Text = "Максимальная скорость";
+            // 
+            // labelMiSpeed
+            // 
+            labelMiSpeed.AutoSize = true;
+            labelMiSpeed.Location = new Point(487, 100);
+            labelMiSpeed.Name = "labelMiSpeed";
+            labelMiSpeed.Size = new Size(175, 20);
+            labelMiSpeed.TabIndex = 6;
+            labelMiSpeed.Text = "Минимальная скорость";
+            // 
+            // labelAvSpeed
+            // 
+            labelAvSpeed.AutoSize = true;
+            labelAvSpeed.Location = new Point(737, 100);
+            labelAvSpeed.Name = "labelAvSpeed";
+            labelAvSpeed.Size = new Size(134, 20);
+            labelAvSpeed.TabIndex = 6;
+            labelAvSpeed.Text = "Средняя скорость";
+            // 
+            // labelAvDur
+            // 
+            labelAvDur.AutoSize = true;
+            labelAvDur.Location = new Point(673, 238);
+            labelAvDur.Name = "labelAvDur";
+            labelAvDur.Size = new Size(170, 20);
+            labelAvDur.TabIndex = 6;
+            labelAvDur.Text = "Средняя продолжит-ть";
+            // 
+            // labelTotDur
+            // 
+            labelTotDur.AutoSize = true;
+            labelTotDur.Location = new Point(526, 284);
+            labelTotDur.Name = "labelTotDur";
+            labelTotDur.Size = new Size(159, 20);
+            labelTotDur.TabIndex = 6;
+            labelTotDur.Text = "Общая продолжит-ть";
+            // 
+            // labelDist
+            // 
+            labelDist.AutoSize = true;
+            labelDist.Location = new Point(673, 326);
+            labelDist.Name = "labelDist";
+            labelDist.Size = new Size(113, 20);
+            labelDist.TabIndex = 6;
+            labelDist.Text = "Пройдено (км)";
+            // 
             // View
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -264,5 +404,19 @@
         private TextBox textBox2;
         private TextBox textBox1;
         private MonthCalendar monthCalendar1;
+        private TextBox textBoxDist;
+        private TextBox textBoxAvDur;
+        private TextBox textBoxDur;
+        private TextBox textBoxPulse;
+        private TextBox textBoxAvSpeed;
+        private TextBox textBoxMaSpeed;
+        private TextBox textBoxMiSpeed;
+        private Label labelDist;
+        private Label labelTotDur;
+        private Label labelAvDur;
+        private Label labelAvSpeed;
+        private Label labelMiSpeed;
+        private Label labelMaSpeed;
+        private Label labelAvPulse;
     }
 }

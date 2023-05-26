@@ -4,6 +4,7 @@ using OxyPlot.Series;
 
 using GitTestApp.Temp;
 
+
 namespace GitTestApp
 {
     public partial class View : Form
@@ -68,7 +69,13 @@ namespace GitTestApp
 
             g.DrawLines(pen, points);
 
-
+            textBoxAvDur.Text = Math.Round(WorkoutFacade.AvgDuration, 2).ToString();
+            textBoxAvSpeed.Text = WorkoutFacade.AvgSpeed.ToString();
+            textBoxDist.Text = WorkoutFacade.TotalDistance.ToString();
+            textBoxMaSpeed.Text = WorkoutFacade.MaxSpeed.ToString();
+            textBoxMiSpeed.Text = WorkoutFacade.MinSpeed.ToString();
+            textBoxPulse.Text = WorkoutFacade.AvgPulse.ToString();
+            textBoxDur.Text = WorkoutFacade.TotalDuration.ToString();
         }
     }
 }
