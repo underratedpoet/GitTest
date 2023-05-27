@@ -23,7 +23,7 @@ namespace GitTestApp
 
             temp.FoundDrop(richTextBox1, temp.Temps);
 
-            temp.TempGraphic(pictureBox1, temp.Temps);
+            //temp.TempGraphic(pictureBox1, temp.Temps);
         }
 
         private void ViewTemp_Load(object sender, EventArgs e)
