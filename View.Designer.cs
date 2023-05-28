@@ -66,6 +66,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxMin).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxPulse).BeginInit();
             tabPageTemp.SuspendLayout();
+            tabPageCrime.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCrime).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -82,7 +84,6 @@
             // 
             // tabPageRun
             // 
-            tabPageRun.Controls.Add(btnOpenCal);
             tabPageRun.Controls.Add(labelDist);
             tabPageRun.Controls.Add(labelTotDur);
             tabPageRun.Controls.Add(labelAvDur);
@@ -407,6 +408,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxPulse).EndInit();
             tabPageTemp.ResumeLayout(false);
             tabPageTemp.PerformLayout();
+            tabPageCrime.ResumeLayout(false);
+            tabPageCrime.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCrime).EndInit();
             ResumeLayout(false);
         }
 
