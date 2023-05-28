@@ -10,6 +10,7 @@ namespace GitTestApp
     public partial class View : Form
     {
         Temperature temp = new Temperature();
+        
 
         public View()
         {
@@ -76,6 +77,12 @@ namespace GitTestApp
             textBoxMiSpeed.Text = WorkoutFacade.MinSpeed.ToString();
             textBoxPulse.Text = WorkoutFacade.AvgPulse.ToString();
             textBoxDur.Text = WorkoutFacade.TotalDuration.ToString();
+        }
+
+        private void btnOpenCal_Click(object sender, EventArgs e)
+        {
+            ViewWorkout workout = new ViewWorkout();
+            workout.Show();
         }
     }
 }

@@ -95,5 +95,14 @@ namespace GitTestApp.Run
             AvgPulse = pulsSum / count;
             AvgSpeed = speedSum / count;
         }
+
+        public static Workout? FindWorkout(string date)
+        {
+            foreach(Workout workout in Workouts)
+            {
+                if(workout.Date.Date.ToShortDateString() == date) return workout;
+            }
+            return null;
+        }
     }
 }
