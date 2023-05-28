@@ -3,14 +3,14 @@ using OxyPlot;
 using OxyPlot.Series;
 
 using GitTestApp.Temp;
-
+using GitTestApp.RusCrime;
 
 namespace GitTestApp
 {
     public partial class View : Form
     {
         Temperature temp = new Temperature();
-        
+
 
         public View()
         {
@@ -83,6 +83,34 @@ namespace GitTestApp
         {
             ViewWorkout workout = new ViewWorkout();
             workout.Show();
+        }
+
+        private void buttonCrime_Click(object sender, EventArgs e)
+        {
+            Crime crime = new Crime();
+            List<Crime> list = new List<Crime>();
+            crime.ReadfromFile(list);
+
+            crime.Difference(textBoxMin, textBoxMax, list[0].Crimes, list);
+
+        }
+
+        private void comboBoxCrime_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Crime crime = new Crime();
+            List<Crime> list = new List<Crime>();
+
+            crime.ReadfromFile(list);
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i].Id == comboBoxCrime.SelectedIndex)
+                {
+                    list[i].Crimes.Count();
+                    crime.PaintGraphic(pictureBoxCrime, list[i].Crimes, list[i].Id);
+                }
+            }
+
         }
     }
 }
