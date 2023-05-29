@@ -29,8 +29,14 @@
         private void InitializeComponent()
         {
             tabControl1 = new TabControl();
+            pictureBoxCrime = new PictureBox();
+
+            textBoxMax = new TextBox();
+            textBoxMin = new TextBox();
             tabPageRun = new TabPage();
+            comboBoxCrime = new ComboBox();
             btnOpenCal = new Button();
+            buttonCrime = new Button();
             labelDist = new Label();
             labelTotDur = new Label();
             labelAvDur = new Label();
@@ -73,12 +79,17 @@
             apartRegionComboBox = new ComboBox();
             apartYearComboBox = new ComboBox();
             tabPageCrime = new TabPage();
+            labelD = new Label();
+            labelC = new Label();
+            labelB = new Label();
+            labelA = new Label();
             tabControl1.SuspendLayout();
             tabPageRun.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxMin).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBoxPulse).BeginInit();
             tabPageTemp.SuspendLayout();
             tabPageHouses.SuspendLayout();
+            tabPageCrime.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -512,14 +523,99 @@
             // 
             // tabPageCrime
             // 
-            tabPageCrime.Location = new Point(4, 29);
-            tabPageCrime.Margin = new Padding(3, 4, 3, 4);
-            tabPageCrime.Name = "tabPageCrime";
-            tabPageCrime.Padding = new Padding(3, 4, 3, 4);
-            tabPageCrime.Size = new Size(877, 410);
+            tabPageCrime.Controls.Add(labelD); 
+            tabPageCrime.Controls.Add(labelC);
+            tabPageCrime.Controls.Add(labelB); 
+            tabPageCrime.Controls.Add(labelA);
+            tabPageCrime.Controls.Add(textBoxMax); 
+            tabPageCrime.Controls.Add(textBoxMin);
+            tabPageCrime.Controls.Add(pictureBoxCrime); 
+            tabPageCrime.Controls.Add(comboBoxCrime);
+            tabPageCrime.Controls.Add(buttonCrime); 
+            tabPageCrime.Location = new Point(4, 24);
+            tabPageCrime.Name = "tabPageCrime"; 
+            tabPageCrime.Padding = new Padding(3);
+            tabPageCrime.Size = new Size(766, 304); 
             tabPageCrime.TabIndex = 3;
-            tabPageCrime.Text = " Преступность";
+            tabPageCrime.Text = " Преступность"; 
             tabPageCrime.UseVisualStyleBackColor = true;
+            // 
+            // labelD
+            // 
+            labelD.AutoSize = true;
+            labelD.Location = new Point(291, 262);
+            labelD.Name = "labelD";
+            labelD.Size = new Size(105, 20);
+            labelD.TabIndex = 8;
+            labelD.Text = "больше всего";
+            // 
+            // labelC
+            // 
+            labelC.AutoSize = true;
+            labelC.Location = new Point(24, 262);
+            labelC.Name = "labelC";
+            labelC.Size = new Size(17, 20);
+            labelC.TabIndex = 7;
+            labelC.Text = "а";
+            // 
+            // labelB
+            // 
+            labelB.AutoSize = true;
+            labelB.Location = new Point(379, 233);
+            labelB.Name = "labelB";
+            labelB.Size = new Size(187, 20);
+            labelB.TabIndex = 6;
+            labelB.Text = "меньше всего снизились,";
+            // 
+            // labelA
+            // 
+            labelA.AutoSize = true;
+            labelA.Location = new Point(24, 233);
+            labelA.Name = "labelA";
+            labelA.Size = new Size(71, 20);
+            labelA.TabIndex = 5;
+            labelA.Text = "За 15 лет";
+            textBoxMax.Location = new Point(40, 256); 
+            textBoxMax.Name = "textBoxMax";
+            textBoxMax.Size = new Size(242, 23); 
+            textBoxMax.TabIndex = 4;
+            //             
+            // textBoxMin
+            //
+            textBoxMin.Location = new Point(92, 227);
+            textBoxMin.Name = "textBoxMin"; 
+            textBoxMin.Size = new Size(269, 23);
+            textBoxMin.TabIndex = 3;            
+            // 
+            // pictureBoxCrime            
+            // 
+            pictureBoxCrime.Location = new Point(21, 72); 
+            pictureBoxCrime.Name = "pictureBoxCrime";
+            pictureBoxCrime.Size = new Size(722, 144); 
+            pictureBoxCrime.TabIndex = 2;
+            pictureBoxCrime.TabStop = false;            
+            // 
+            // comboBoxCrime            
+            // 
+            comboBoxCrime.FormattingEnabled = true; 
+            comboBoxCrime.Items.AddRange(new object[] { "убийства и покушение на убийство", 
+                "умышленное причинение тяжкого вреда здоровью", "изнасилование и покушение на изнасилование", 
+                "грабеж", "преступления, связанные с незаконным оборотом наркотиков" });
+            comboBoxCrime.Location = new Point(50, 43); 
+            comboBoxCrime.Name = "comboBoxCrime";
+            comboBoxCrime.Size = new Size(311, 23); 
+            comboBoxCrime.TabIndex = 1;
+            comboBoxCrime.SelectedIndexChanged += comboBoxCrime_SelectedIndexChanged;            
+            // 
+            // buttonCrime            
+            // 
+            buttonCrime.Location = new Point(452, 42); 
+            buttonCrime.Name = "buttonCrime";
+            buttonCrime.Size = new Size(75, 23); 
+            buttonCrime.TabIndex = 0;
+            buttonCrime.Text = "Прочитать"; 
+            buttonCrime.UseVisualStyleBackColor = true;
+            buttonCrime.Click += buttonCrime_Click;
             // 
             // View
             // 
@@ -530,6 +626,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "View";
             Text = "App";
+            Load += View_Load_1;
             tabControl1.ResumeLayout(false);
             tabPageRun.ResumeLayout(false);
             tabPageRun.PerformLayout();
@@ -539,6 +636,8 @@
             tabPageTemp.PerformLayout();
             tabPageHouses.ResumeLayout(false);
             tabPageHouses.PerformLayout();
+            tabPageCrime.ResumeLayout(false);
+            tabPageCrime.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -589,5 +688,14 @@
         private Label label6;
         private Label label5;
         private TextBox PricesType;
+        private Label labelD;
+        private Label labelC;
+        private Label labelB;
+        private Label labelA;
+        private TextBox textBoxMax;
+        private TextBox textBoxMin;
+        private PictureBox pictureBoxCrime;
+        private ComboBox comboBoxCrime;
+        private Button buttonCrime;
     }
 }

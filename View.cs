@@ -1,9 +1,11 @@
+
 using GitTestApp.Run;
 using OxyPlot;
 using OxyPlot.Series;
 
 using GitTestApp.Temp;
 using GitTestApp.Apartments;
+using GitTestApp.RusCrime;
 
 
 namespace GitTestApp
@@ -116,5 +118,38 @@ namespace GitTestApp
             Price1roomTxtBox.Text = pr1r + ""; Price2roomTxtBox.Text = pr2r + ""; Price3roomTxtBox.Text = pr3r + "";
             Apartment.SetPricesType(PricesType, aparts, apartRegionComboBox.SelectedIndex);
         }
+        private void buttonCrime_Click(object sender, EventArgs e)
+        {
+            Crime crime = new Crime();
+            List<Crime> list = new List<Crime>();
+            crime.ReadfromFile(list);
+
+            crime.Difference(textBoxMin, textBoxMax, list[0].Crimes, list);
+
+        }
+
+        private void comboBoxCrime_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Crime crime = new Crime();
+            List<Crime> list = new List<Crime>();
+
+            crime.ReadfromFile(list);
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i].Id == comboBoxCrime.SelectedIndex)
+                {
+                    list[i].Crimes.Count();
+                    crime.PaintGraphic(pictureBoxCrime, list[i].Crimes, list[i].Id);
+                }
+            }
+
+        }
+
+        private void View_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
