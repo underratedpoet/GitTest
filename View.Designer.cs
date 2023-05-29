@@ -28,510 +28,518 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPageRun = new System.Windows.Forms.TabPage();
-            this.btnOpenCal = new System.Windows.Forms.Button();
-            this.labelDist = new System.Windows.Forms.Label();
-            this.labelTotDur = new System.Windows.Forms.Label();
-            this.labelAvDur = new System.Windows.Forms.Label();
-            this.labelAvSpeed = new System.Windows.Forms.Label();
-            this.labelMiSpeed = new System.Windows.Forms.Label();
-            this.labelMaSpeed = new System.Windows.Forms.Label();
-            this.labelAvPulse = new System.Windows.Forms.Label();
-            this.textBoxDist = new System.Windows.Forms.TextBox();
-            this.textBoxAvDur = new System.Windows.Forms.TextBox();
-            this.textBoxDur = new System.Windows.Forms.TextBox();
-            this.textBoxPulse = new System.Windows.Forms.TextBox();
-            this.textBoxAvSpeed = new System.Windows.Forms.TextBox();
-            this.textBoxMaSpeed = new System.Windows.Forms.TextBox();
-            this.textBoxMiSpeed = new System.Windows.Forms.TextBox();
-            this.labelMin = new System.Windows.Forms.Label();
-            this.labelPulse = new System.Windows.Forms.Label();
-            this.pictureBoxMin = new System.Windows.Forms.PictureBox();
-            this.buttonLoad = new System.Windows.Forms.Button();
-            this.pictureBoxPulse = new System.Windows.Forms.PictureBox();
-            this.tabPageTemp = new System.Windows.Forms.TabPage();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tabPageHouses = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Price3roomTxtBox = new System.Windows.Forms.TextBox();
-            this.Price2roomTxtBox = new System.Windows.Forms.TextBox();
-            this.Price1roomTxtBox = new System.Windows.Forms.TextBox();
-            this.apartRegionComboBox = new System.Windows.Forms.ComboBox();
-            this.apartYearComboBox = new System.Windows.Forms.ComboBox();
-            this.tabPageCrime = new System.Windows.Forms.TabPage();
-            this.PricesType = new System.Windows.Forms.TextBox();
-            this.tabControl1.SuspendLayout();
-            this.tabPageRun.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPulse)).BeginInit();
-            this.tabPageTemp.SuspendLayout();
-            this.tabPageHouses.SuspendLayout();
-            this.SuspendLayout();
+            tabControl1 = new TabControl();
+            tabPageRun = new TabPage();
+            btnOpenCal = new Button();
+            labelDist = new Label();
+            labelTotDur = new Label();
+            labelAvDur = new Label();
+            labelAvSpeed = new Label();
+            labelMiSpeed = new Label();
+            labelMaSpeed = new Label();
+            labelAvPulse = new Label();
+            textBoxDist = new TextBox();
+            textBoxAvDur = new TextBox();
+            textBoxDur = new TextBox();
+            textBoxPulse = new TextBox();
+            textBoxAvSpeed = new TextBox();
+            textBoxMaSpeed = new TextBox();
+            textBoxMiSpeed = new TextBox();
+            labelMin = new Label();
+            labelPulse = new Label();
+            pictureBoxMin = new PictureBox();
+            buttonLoad = new Button();
+            pictureBoxPulse = new PictureBox();
+            tabPageTemp = new TabPage();
+            monthCalendar1 = new MonthCalendar();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            button1 = new Button();
+            tabPageHouses = new TabPage();
+            PricesType = new TextBox();
+            button2 = new Button();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            Price3roomTxtBox = new TextBox();
+            Price2roomTxtBox = new TextBox();
+            Price1roomTxtBox = new TextBox();
+            apartRegionComboBox = new ComboBox();
+            apartYearComboBox = new ComboBox();
+            tabPageCrime = new TabPage();
+            tabControl1.SuspendLayout();
+            tabPageRun.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxMin).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPulse).BeginInit();
+            tabPageTemp.SuspendLayout();
+            tabPageHouses.SuspendLayout();
+            SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPageRun);
-            this.tabControl1.Controls.Add(this.tabPageTemp);
-            this.tabControl1.Controls.Add(this.tabPageHouses);
-            this.tabControl1.Controls.Add(this.tabPageCrime);
-            this.tabControl1.Location = new System.Drawing.Point(10, 9);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(774, 332);
-            this.tabControl1.TabIndex = 0;
+            tabControl1.Controls.Add(tabPageRun);
+            tabControl1.Controls.Add(tabPageTemp);
+            tabControl1.Controls.Add(tabPageHouses);
+            tabControl1.Controls.Add(tabPageCrime);
+            tabControl1.Location = new Point(11, 12);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(885, 443);
+            tabControl1.TabIndex = 0;
             // 
             // tabPageRun
             // 
-            this.tabPageRun.Controls.Add(this.btnOpenCal);
-            this.tabPageRun.Controls.Add(this.labelDist);
-            this.tabPageRun.Controls.Add(this.labelTotDur);
-            this.tabPageRun.Controls.Add(this.labelAvDur);
-            this.tabPageRun.Controls.Add(this.labelAvSpeed);
-            this.tabPageRun.Controls.Add(this.labelMiSpeed);
-            this.tabPageRun.Controls.Add(this.labelMaSpeed);
-            this.tabPageRun.Controls.Add(this.labelAvPulse);
-            this.tabPageRun.Controls.Add(this.textBoxDist);
-            this.tabPageRun.Controls.Add(this.textBoxAvDur);
-            this.tabPageRun.Controls.Add(this.textBoxDur);
-            this.tabPageRun.Controls.Add(this.textBoxPulse);
-            this.tabPageRun.Controls.Add(this.textBoxAvSpeed);
-            this.tabPageRun.Controls.Add(this.textBoxMaSpeed);
-            this.tabPageRun.Controls.Add(this.textBoxMiSpeed);
-            this.tabPageRun.Controls.Add(this.labelMin);
-            this.tabPageRun.Controls.Add(this.labelPulse);
-            this.tabPageRun.Controls.Add(this.pictureBoxMin);
-            this.tabPageRun.Controls.Add(this.buttonLoad);
-            this.tabPageRun.Controls.Add(this.pictureBoxPulse);
-            this.tabPageRun.Location = new System.Drawing.Point(4, 24);
-            this.tabPageRun.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageRun.Name = "tabPageRun";
-            this.tabPageRun.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageRun.Size = new System.Drawing.Size(766, 304);
-            this.tabPageRun.TabIndex = 0;
-            this.tabPageRun.Text = "Пробежки";
-            this.tabPageRun.UseVisualStyleBackColor = true;
+            tabPageRun.Controls.Add(btnOpenCal);
+            tabPageRun.Controls.Add(labelDist);
+            tabPageRun.Controls.Add(labelTotDur);
+            tabPageRun.Controls.Add(labelAvDur);
+            tabPageRun.Controls.Add(labelAvSpeed);
+            tabPageRun.Controls.Add(labelMiSpeed);
+            tabPageRun.Controls.Add(labelMaSpeed);
+            tabPageRun.Controls.Add(labelAvPulse);
+            tabPageRun.Controls.Add(textBoxDist);
+            tabPageRun.Controls.Add(textBoxAvDur);
+            tabPageRun.Controls.Add(textBoxDur);
+            tabPageRun.Controls.Add(textBoxPulse);
+            tabPageRun.Controls.Add(textBoxAvSpeed);
+            tabPageRun.Controls.Add(textBoxMaSpeed);
+            tabPageRun.Controls.Add(textBoxMiSpeed);
+            tabPageRun.Controls.Add(labelMin);
+            tabPageRun.Controls.Add(labelPulse);
+            tabPageRun.Controls.Add(pictureBoxMin);
+            tabPageRun.Controls.Add(buttonLoad);
+            tabPageRun.Controls.Add(pictureBoxPulse);
+            tabPageRun.Location = new Point(4, 29);
+            tabPageRun.Name = "tabPageRun";
+            tabPageRun.Padding = new Padding(3);
+            tabPageRun.Size = new Size(877, 410);
+            tabPageRun.TabIndex = 0;
+            tabPageRun.Text = "Пробежки";
+            tabPageRun.UseVisualStyleBackColor = true;
             // 
             // btnOpenCal
             // 
-            this.btnOpenCal.Location = new System.Drawing.Point(426, 244);
-            this.btnOpenCal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnOpenCal.Name = "btnOpenCal";
-            this.btnOpenCal.Size = new System.Drawing.Size(336, 22);
-            this.btnOpenCal.TabIndex = 7;
-            this.btnOpenCal.Text = "Подробнее";
-            this.btnOpenCal.UseVisualStyleBackColor = true;
+            btnOpenCal.Location = new Point(487, 325);
+            btnOpenCal.Name = "btnOpenCal";
+            btnOpenCal.Size = new Size(384, 29);
+            btnOpenCal.TabIndex = 7;
+            btnOpenCal.Text = "Подробнее";
+            btnOpenCal.UseVisualStyleBackColor = true;
+            btnOpenCal.Click += btnOpenCal_Click;
             // 
             // labelDist
             // 
-            this.labelDist.AutoSize = true;
-            this.labelDist.Location = new System.Drawing.Point(589, 210);
-            this.labelDist.Name = "labelDist";
-            this.labelDist.Size = new System.Drawing.Size(89, 15);
-            this.labelDist.TabIndex = 6;
-            this.labelDist.Text = "Пройдено (км)";
+            labelDist.AutoSize = true;
+            labelDist.Location = new Point(673, 280);
+            labelDist.Name = "labelDist";
+            labelDist.Size = new Size(113, 20);
+            labelDist.TabIndex = 6;
+            labelDist.Text = "Пройдено (км)";
             // 
             // labelTotDur
             // 
-            this.labelTotDur.AutoSize = true;
-            this.labelTotDur.Location = new System.Drawing.Point(460, 176);
-            this.labelTotDur.Name = "labelTotDur";
-            this.labelTotDur.Size = new System.Drawing.Size(127, 15);
-            this.labelTotDur.TabIndex = 6;
-            this.labelTotDur.Text = "Общая продолжит-ть";
+            labelTotDur.AutoSize = true;
+            labelTotDur.Location = new Point(526, 235);
+            labelTotDur.Name = "labelTotDur";
+            labelTotDur.Size = new Size(159, 20);
+            labelTotDur.TabIndex = 6;
+            labelTotDur.Text = "Общая продолжит-ть";
             // 
             // labelAvDur
             // 
-            this.labelAvDur.AutoSize = true;
-            this.labelAvDur.Location = new System.Drawing.Point(589, 140);
-            this.labelAvDur.Name = "labelAvDur";
-            this.labelAvDur.Size = new System.Drawing.Size(134, 15);
-            this.labelAvDur.TabIndex = 6;
-            this.labelAvDur.Text = "Средняя продолжит-ть";
+            labelAvDur.AutoSize = true;
+            labelAvDur.Location = new Point(673, 187);
+            labelAvDur.Name = "labelAvDur";
+            labelAvDur.Size = new Size(170, 20);
+            labelAvDur.TabIndex = 6;
+            labelAvDur.Text = "Средняя продолжит-ть";
             // 
             // labelAvSpeed
             // 
-            this.labelAvSpeed.AutoSize = true;
-            this.labelAvSpeed.Location = new System.Drawing.Point(645, 75);
-            this.labelAvSpeed.Name = "labelAvSpeed";
-            this.labelAvSpeed.Size = new System.Drawing.Size(106, 15);
-            this.labelAvSpeed.TabIndex = 6;
-            this.labelAvSpeed.Text = "Средняя скорость";
+            labelAvSpeed.AutoSize = true;
+            labelAvSpeed.Location = new Point(737, 100);
+            labelAvSpeed.Name = "labelAvSpeed";
+            labelAvSpeed.Size = new Size(134, 20);
+            labelAvSpeed.TabIndex = 6;
+            labelAvSpeed.Text = "Средняя скорость";
             // 
             // labelMiSpeed
             // 
-            this.labelMiSpeed.AutoSize = true;
-            this.labelMiSpeed.Location = new System.Drawing.Point(426, 75);
-            this.labelMiSpeed.Name = "labelMiSpeed";
-            this.labelMiSpeed.Size = new System.Drawing.Size(139, 15);
-            this.labelMiSpeed.TabIndex = 6;
-            this.labelMiSpeed.Text = "Минимальная скорость";
+            labelMiSpeed.AutoSize = true;
+            labelMiSpeed.Location = new Point(487, 100);
+            labelMiSpeed.Name = "labelMiSpeed";
+            labelMiSpeed.Size = new Size(175, 20);
+            labelMiSpeed.TabIndex = 6;
+            labelMiSpeed.Text = "Минимальная скорость";
             // 
             // labelMaSpeed
             // 
-            this.labelMaSpeed.AutoSize = true;
-            this.labelMaSpeed.Location = new System.Drawing.Point(606, 9);
-            this.labelMaSpeed.Name = "labelMaSpeed";
-            this.labelMaSpeed.Size = new System.Drawing.Size(143, 15);
-            this.labelMaSpeed.TabIndex = 6;
-            this.labelMaSpeed.Text = "Максимальная скорость";
+            labelMaSpeed.AutoSize = true;
+            labelMaSpeed.Location = new Point(693, 12);
+            labelMaSpeed.Name = "labelMaSpeed";
+            labelMaSpeed.Size = new Size(179, 20);
+            labelMaSpeed.TabIndex = 6;
+            labelMaSpeed.Text = "Максимальная скорость";
             // 
             // labelAvPulse
             // 
-            this.labelAvPulse.AutoSize = true;
-            this.labelAvPulse.Location = new System.Drawing.Point(426, 9);
-            this.labelAvPulse.Name = "labelAvPulse";
-            this.labelAvPulse.Size = new System.Drawing.Size(90, 15);
-            this.labelAvPulse.TabIndex = 6;
-            this.labelAvPulse.Text = "Средний пульс";
+            labelAvPulse.AutoSize = true;
+            labelAvPulse.Location = new Point(487, 12);
+            labelAvPulse.Name = "labelAvPulse";
+            labelAvPulse.Size = new Size(113, 20);
+            labelAvPulse.TabIndex = 6;
+            labelAvPulse.Text = "Средний пульс";
             // 
             // textBoxDist
             // 
-            this.textBoxDist.Location = new System.Drawing.Point(426, 210);
-            this.textBoxDist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxDist.Name = "textBoxDist";
-            this.textBoxDist.Size = new System.Drawing.Size(158, 23);
-            this.textBoxDist.TabIndex = 5;
+            textBoxDist.Location = new Point(487, 280);
+            textBoxDist.Name = "textBoxDist";
+            textBoxDist.Size = new Size(180, 27);
+            textBoxDist.TabIndex = 5;
             // 
             // textBoxAvDur
             // 
-            this.textBoxAvDur.Location = new System.Drawing.Point(426, 140);
-            this.textBoxAvDur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxAvDur.Name = "textBoxAvDur";
-            this.textBoxAvDur.Size = new System.Drawing.Size(158, 23);
-            this.textBoxAvDur.TabIndex = 5;
+            textBoxAvDur.Location = new Point(487, 187);
+            textBoxAvDur.Name = "textBoxAvDur";
+            textBoxAvDur.Size = new Size(180, 27);
+            textBoxAvDur.TabIndex = 5;
             // 
             // textBoxDur
             // 
-            this.textBoxDur.Location = new System.Drawing.Point(605, 176);
-            this.textBoxDur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxDur.Name = "textBoxDur";
-            this.textBoxDur.Size = new System.Drawing.Size(158, 23);
-            this.textBoxDur.TabIndex = 5;
+            textBoxDur.Location = new Point(691, 235);
+            textBoxDur.Name = "textBoxDur";
+            textBoxDur.Size = new Size(180, 27);
+            textBoxDur.TabIndex = 5;
             // 
             // textBoxPulse
             // 
-            this.textBoxPulse.Location = new System.Drawing.Point(426, 32);
-            this.textBoxPulse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxPulse.Name = "textBoxPulse";
-            this.textBoxPulse.Size = new System.Drawing.Size(158, 23);
-            this.textBoxPulse.TabIndex = 5;
+            textBoxPulse.Location = new Point(487, 43);
+            textBoxPulse.Name = "textBoxPulse";
+            textBoxPulse.Size = new Size(180, 27);
+            textBoxPulse.TabIndex = 5;
             // 
             // textBoxAvSpeed
             // 
-            this.textBoxAvSpeed.Location = new System.Drawing.Point(605, 99);
-            this.textBoxAvSpeed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxAvSpeed.Name = "textBoxAvSpeed";
-            this.textBoxAvSpeed.Size = new System.Drawing.Size(158, 23);
-            this.textBoxAvSpeed.TabIndex = 5;
+            textBoxAvSpeed.Location = new Point(691, 132);
+            textBoxAvSpeed.Name = "textBoxAvSpeed";
+            textBoxAvSpeed.Size = new Size(180, 27);
+            textBoxAvSpeed.TabIndex = 5;
             // 
             // textBoxMaSpeed
             // 
-            this.textBoxMaSpeed.Location = new System.Drawing.Point(605, 32);
-            this.textBoxMaSpeed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxMaSpeed.Name = "textBoxMaSpeed";
-            this.textBoxMaSpeed.Size = new System.Drawing.Size(158, 23);
-            this.textBoxMaSpeed.TabIndex = 5;
+            textBoxMaSpeed.Location = new Point(691, 43);
+            textBoxMaSpeed.Name = "textBoxMaSpeed";
+            textBoxMaSpeed.Size = new Size(180, 27);
+            textBoxMaSpeed.TabIndex = 5;
             // 
             // textBoxMiSpeed
             // 
-            this.textBoxMiSpeed.Location = new System.Drawing.Point(426, 99);
-            this.textBoxMiSpeed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxMiSpeed.Name = "textBoxMiSpeed";
-            this.textBoxMiSpeed.Size = new System.Drawing.Size(158, 23);
-            this.textBoxMiSpeed.TabIndex = 5;
+            textBoxMiSpeed.Location = new Point(487, 132);
+            textBoxMiSpeed.Name = "textBoxMiSpeed";
+            textBoxMiSpeed.Size = new Size(180, 27);
+            textBoxMiSpeed.TabIndex = 5;
             // 
             // labelMin
             // 
-            this.labelMin.AutoSize = true;
-            this.labelMin.Location = new System.Drawing.Point(6, 122);
-            this.labelMin.Name = "labelMin";
-            this.labelMin.Size = new System.Drawing.Size(330, 15);
-            this.labelMin.TabIndex = 4;
-            this.labelMin.Text = "Изменения длительности тренировок за последний месяц";
+            labelMin.AutoSize = true;
+            labelMin.Location = new Point(7, 163);
+            labelMin.Name = "labelMin";
+            labelMin.Size = new Size(421, 20);
+            labelMin.TabIndex = 4;
+            labelMin.Text = "Изменения длительности тренировок за последний месяц";
             // 
             // labelPulse
             // 
-            this.labelPulse.AutoSize = true;
-            this.labelPulse.Location = new System.Drawing.Point(6, 9);
-            this.labelPulse.Name = "labelPulse";
-            this.labelPulse.Size = new System.Drawing.Size(323, 15);
-            this.labelPulse.TabIndex = 3;
-            this.labelPulse.Text = "Изменения пульса во время занятий за последний месяц";
+            labelPulse.AutoSize = true;
+            labelPulse.Location = new Point(7, 12);
+            labelPulse.Name = "labelPulse";
+            labelPulse.Size = new Size(415, 20);
+            labelPulse.TabIndex = 3;
+            labelPulse.Text = "Изменения пульса во время занятий за последний месяц";
             // 
             // pictureBoxMin
             // 
-            this.pictureBoxMin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxMin.Location = new System.Drawing.Point(6, 140);
-            this.pictureBoxMin.Name = "pictureBoxMin";
-            this.pictureBoxMin.Size = new System.Drawing.Size(415, 126);
-            this.pictureBoxMin.TabIndex = 2;
-            this.pictureBoxMin.TabStop = false;
+            pictureBoxMin.BorderStyle = BorderStyle.Fixed3D;
+            pictureBoxMin.Location = new Point(7, 187);
+            pictureBoxMin.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxMin.Name = "pictureBoxMin";
+            pictureBoxMin.Size = new Size(474, 167);
+            pictureBoxMin.TabIndex = 2;
+            pictureBoxMin.TabStop = false;
             // 
             // buttonLoad
             // 
-            this.buttonLoad.Location = new System.Drawing.Point(6, 271);
-            this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Size = new System.Drawing.Size(756, 31);
-            this.buttonLoad.TabIndex = 1;
-            this.buttonLoad.Text = "Загрузить данные";
-            this.buttonLoad.UseVisualStyleBackColor = true;
+            buttonLoad.Location = new Point(7, 361);
+            buttonLoad.Margin = new Padding(3, 4, 3, 4);
+            buttonLoad.Name = "buttonLoad";
+            buttonLoad.Size = new Size(864, 41);
+            buttonLoad.TabIndex = 1;
+            buttonLoad.Text = "Загрузить данные";
+            buttonLoad.UseVisualStyleBackColor = true;
+            buttonLoad.Click += buttonLoad_Click;
             // 
             // pictureBoxPulse
             // 
-            this.pictureBoxPulse.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxPulse.Location = new System.Drawing.Point(6, 32);
-            this.pictureBoxPulse.Name = "pictureBoxPulse";
-            this.pictureBoxPulse.Size = new System.Drawing.Size(415, 88);
-            this.pictureBoxPulse.TabIndex = 0;
-            this.pictureBoxPulse.TabStop = false;
+            pictureBoxPulse.BorderStyle = BorderStyle.Fixed3D;
+            pictureBoxPulse.Location = new Point(7, 43);
+            pictureBoxPulse.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxPulse.Name = "pictureBoxPulse";
+            pictureBoxPulse.Size = new Size(474, 116);
+            pictureBoxPulse.TabIndex = 0;
+            pictureBoxPulse.TabStop = false;
             // 
             // tabPageTemp
             // 
-            this.tabPageTemp.Controls.Add(this.monthCalendar1);
-            this.tabPageTemp.Controls.Add(this.label3);
-            this.tabPageTemp.Controls.Add(this.label2);
-            this.tabPageTemp.Controls.Add(this.label1);
-            this.tabPageTemp.Controls.Add(this.textBox3);
-            this.tabPageTemp.Controls.Add(this.textBox2);
-            this.tabPageTemp.Controls.Add(this.textBox1);
-            this.tabPageTemp.Controls.Add(this.button1);
-            this.tabPageTemp.Location = new System.Drawing.Point(4, 24);
-            this.tabPageTemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageTemp.Name = "tabPageTemp";
-            this.tabPageTemp.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageTemp.Size = new System.Drawing.Size(766, 304);
-            this.tabPageTemp.TabIndex = 1;
-            this.tabPageTemp.Text = "Температура";
-            this.tabPageTemp.UseVisualStyleBackColor = true;
+            tabPageTemp.Controls.Add(monthCalendar1);
+            tabPageTemp.Controls.Add(label3);
+            tabPageTemp.Controls.Add(label2);
+            tabPageTemp.Controls.Add(label1);
+            tabPageTemp.Controls.Add(textBox3);
+            tabPageTemp.Controls.Add(textBox2);
+            tabPageTemp.Controls.Add(textBox1);
+            tabPageTemp.Controls.Add(button1);
+            tabPageTemp.Location = new Point(4, 29);
+            tabPageTemp.Name = "tabPageTemp";
+            tabPageTemp.Padding = new Padding(3);
+            tabPageTemp.Size = new Size(877, 410);
+            tabPageTemp.TabIndex = 1;
+            tabPageTemp.Text = "Температура";
+            tabPageTemp.UseVisualStyleBackColor = true;
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(41, 37);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 10;
+            monthCalendar1.Location = new Point(47, 49);
+            monthCalendar1.Margin = new Padding(10, 12, 10, 12);
+            monthCalendar1.Name = "monthCalendar1";
+            monthCalendar1.TabIndex = 10;
+            monthCalendar1.DateChanged += monthCalendarDateChanged;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(288, 154);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 15);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Минимальная";
+            label3.AutoSize = true;
+            label3.Location = new Point(329, 205);
+            label3.Name = "label3";
+            label3.Size = new Size(109, 20);
+            label3.TabIndex = 8;
+            label3.Text = "Минимальная";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(302, 105);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 15);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Средняя";
+            label2.AutoSize = true;
+            label2.Location = new Point(345, 140);
+            label2.Name = "label2";
+            label2.Size = new Size(68, 20);
+            label2.TabIndex = 7;
+            label2.Text = "Средняя";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(288, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 15);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Максимальная";
+            label1.AutoSize = true;
+            label1.Location = new Point(329, 72);
+            label1.Name = "label1";
+            label1.Size = new Size(113, 20);
+            label1.TabIndex = 6;
+            label1.Text = "Максимальная";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(399, 151);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 5;
+            textBox3.Location = new Point(456, 201);
+            textBox3.Margin = new Padding(3, 4, 3, 4);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(114, 27);
+            textBox3.TabIndex = 5;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(399, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 4;
+            textBox2.Location = new Point(456, 136);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(114, 27);
+            textBox2.TabIndex = 4;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(399, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 3;
+            textBox1.Location = new Point(456, 68);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(114, 27);
+            textBox1.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(528, 249);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 21);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Показать график";
-            this.button1.UseVisualStyleBackColor = true;
+            button1.Location = new Point(603, 332);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(137, 28);
+            button1.TabIndex = 1;
+            button1.Text = "Показать график";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += buttonTemp;
             // 
             // tabPageHouses
             // 
-            this.tabPageHouses.Controls.Add(this.PricesType);
-            this.tabPageHouses.Controls.Add(this.button2);
-            this.tabPageHouses.Controls.Add(this.label8);
-            this.tabPageHouses.Controls.Add(this.label7);
-            this.tabPageHouses.Controls.Add(this.label6);
-            this.tabPageHouses.Controls.Add(this.label5);
-            this.tabPageHouses.Controls.Add(this.label4);
-            this.tabPageHouses.Controls.Add(this.Price3roomTxtBox);
-            this.tabPageHouses.Controls.Add(this.Price2roomTxtBox);
-            this.tabPageHouses.Controls.Add(this.Price1roomTxtBox);
-            this.tabPageHouses.Controls.Add(this.apartRegionComboBox);
-            this.tabPageHouses.Controls.Add(this.apartYearComboBox);
-            this.tabPageHouses.Location = new System.Drawing.Point(4, 24);
-            this.tabPageHouses.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageHouses.Name = "tabPageHouses";
-            this.tabPageHouses.Size = new System.Drawing.Size(766, 304);
-            this.tabPageHouses.TabIndex = 2;
-            this.tabPageHouses.Text = "Жилье";
-            this.tabPageHouses.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(306, 86);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(144, 60);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Построить график по региону за последние 15 лет";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(22, 212);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(257, 15);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Средняя цена за кв.м. 3-комнатной квартиры";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(22, 148);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(257, 15);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Средняя цена за кв.м. 2-комнатной квартиры";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(22, 86);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(257, 15);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Средняя цена за кв.м. 1-комнатной квартиры";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(184, 22);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 15);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Регион";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(22, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 15);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Год";
-            // 
-            // Price3roomTxtBox
-            // 
-            this.Price3roomTxtBox.Location = new System.Drawing.Point(22, 230);
-            this.Price3roomTxtBox.Name = "Price3roomTxtBox";
-            this.Price3roomTxtBox.Size = new System.Drawing.Size(257, 23);
-            this.Price3roomTxtBox.TabIndex = 4;
-            // 
-            // Price2roomTxtBox
-            // 
-            this.Price2roomTxtBox.Location = new System.Drawing.Point(22, 166);
-            this.Price2roomTxtBox.Name = "Price2roomTxtBox";
-            this.Price2roomTxtBox.Size = new System.Drawing.Size(257, 23);
-            this.Price2roomTxtBox.TabIndex = 3;
-            // 
-            // Price1roomTxtBox
-            // 
-            this.Price1roomTxtBox.Location = new System.Drawing.Point(22, 104);
-            this.Price1roomTxtBox.Name = "Price1roomTxtBox";
-            this.Price1roomTxtBox.Size = new System.Drawing.Size(257, 23);
-            this.Price1roomTxtBox.TabIndex = 2;
-            // 
-            // apartRegionComboBox
-            // 
-            this.apartRegionComboBox.FormattingEnabled = true;
-            this.apartRegionComboBox.Location = new System.Drawing.Point(184, 40);
-            this.apartRegionComboBox.Name = "apartRegionComboBox";
-            this.apartRegionComboBox.Size = new System.Drawing.Size(266, 23);
-            this.apartRegionComboBox.TabIndex = 1;
-            this.apartRegionComboBox.SelectedIndexChanged += new System.EventHandler(this.apartRegionComboBox_SelectedIndexChanged);
-            // 
-            // apartYearComboBox
-            // 
-            this.apartYearComboBox.FormattingEnabled = true;
-            this.apartYearComboBox.Location = new System.Drawing.Point(22, 40);
-            this.apartYearComboBox.Name = "apartYearComboBox";
-            this.apartYearComboBox.Size = new System.Drawing.Size(111, 23);
-            this.apartYearComboBox.TabIndex = 0;
-            this.apartYearComboBox.SelectedIndexChanged += new System.EventHandler(this.apartYearComboBox_SelectedIndexChanged);
-            // 
-            // tabPageCrime
-            // 
-            this.tabPageCrime.Location = new System.Drawing.Point(4, 24);
-            this.tabPageCrime.Name = "tabPageCrime";
-            this.tabPageCrime.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCrime.Size = new System.Drawing.Size(766, 304);
-            this.tabPageCrime.TabIndex = 3;
-            this.tabPageCrime.Text = " Преступность";
-            this.tabPageCrime.UseVisualStyleBackColor = true;
+            tabPageHouses.Controls.Add(PricesType);
+            tabPageHouses.Controls.Add(button2);
+            tabPageHouses.Controls.Add(label8);
+            tabPageHouses.Controls.Add(label7);
+            tabPageHouses.Controls.Add(label6);
+            tabPageHouses.Controls.Add(label5);
+            tabPageHouses.Controls.Add(label4);
+            tabPageHouses.Controls.Add(Price3roomTxtBox);
+            tabPageHouses.Controls.Add(Price2roomTxtBox);
+            tabPageHouses.Controls.Add(Price1roomTxtBox);
+            tabPageHouses.Controls.Add(apartRegionComboBox);
+            tabPageHouses.Controls.Add(apartYearComboBox);
+            tabPageHouses.Location = new Point(4, 29);
+            tabPageHouses.Name = "tabPageHouses";
+            tabPageHouses.Size = new Size(877, 410);
+            tabPageHouses.TabIndex = 2;
+            tabPageHouses.Text = "Жилье";
+            tabPageHouses.UseVisualStyleBackColor = true;
             // 
             // PricesType
             // 
-            this.PricesType.Location = new System.Drawing.Point(306, 166);
-            this.PricesType.Name = "PricesType";
-            this.PricesType.Size = new System.Drawing.Size(444, 23);
-            this.PricesType.TabIndex = 11;
+            PricesType.Location = new Point(350, 221);
+            PricesType.Margin = new Padding(3, 4, 3, 4);
+            PricesType.Name = "PricesType";
+            PricesType.Size = new Size(507, 27);
+            PricesType.TabIndex = 11;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(350, 115);
+            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Name = "button2";
+            button2.Size = new Size(165, 80);
+            button2.TabIndex = 10;
+            button2.Text = "Построить график по региону за последние 15 лет";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(25, 283);
+            label8.Name = "label8";
+            label8.Size = new Size(327, 20);
+            label8.TabIndex = 9;
+            label8.Text = "Средняя цена за кв.м. 3-комнатной квартиры";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(25, 197);
+            label7.Name = "label7";
+            label7.Size = new Size(327, 20);
+            label7.TabIndex = 8;
+            label7.Text = "Средняя цена за кв.м. 2-комнатной квартиры";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(25, 115);
+            label6.Name = "label6";
+            label6.Size = new Size(327, 20);
+            label6.TabIndex = 7;
+            label6.Text = "Средняя цена за кв.м. 1-комнатной квартиры";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(210, 29);
+            label5.Name = "label5";
+            label5.Size = new Size(58, 20);
+            label5.TabIndex = 6;
+            label5.Text = "Регион";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(25, 29);
+            label4.Name = "label4";
+            label4.Size = new Size(33, 20);
+            label4.TabIndex = 5;
+            label4.Text = "Год";
+            // 
+            // Price3roomTxtBox
+            // 
+            Price3roomTxtBox.Location = new Point(25, 307);
+            Price3roomTxtBox.Margin = new Padding(3, 4, 3, 4);
+            Price3roomTxtBox.Name = "Price3roomTxtBox";
+            Price3roomTxtBox.Size = new Size(293, 27);
+            Price3roomTxtBox.TabIndex = 4;
+            // 
+            // Price2roomTxtBox
+            // 
+            Price2roomTxtBox.Location = new Point(25, 221);
+            Price2roomTxtBox.Margin = new Padding(3, 4, 3, 4);
+            Price2roomTxtBox.Name = "Price2roomTxtBox";
+            Price2roomTxtBox.Size = new Size(293, 27);
+            Price2roomTxtBox.TabIndex = 3;
+            // 
+            // Price1roomTxtBox
+            // 
+            Price1roomTxtBox.Location = new Point(25, 139);
+            Price1roomTxtBox.Margin = new Padding(3, 4, 3, 4);
+            Price1roomTxtBox.Name = "Price1roomTxtBox";
+            Price1roomTxtBox.Size = new Size(293, 27);
+            Price1roomTxtBox.TabIndex = 2;
+            // 
+            // apartRegionComboBox
+            // 
+            apartRegionComboBox.FormattingEnabled = true;
+            apartRegionComboBox.Location = new Point(210, 53);
+            apartRegionComboBox.Margin = new Padding(3, 4, 3, 4);
+            apartRegionComboBox.Name = "apartRegionComboBox";
+            apartRegionComboBox.Size = new Size(303, 28);
+            apartRegionComboBox.TabIndex = 1;
+            apartRegionComboBox.SelectedIndexChanged += apartRegionComboBox_SelectedIndexChanged;
+            // 
+            // apartYearComboBox
+            // 
+            apartYearComboBox.FormattingEnabled = true;
+            apartYearComboBox.Location = new Point(25, 53);
+            apartYearComboBox.Margin = new Padding(3, 4, 3, 4);
+            apartYearComboBox.Name = "apartYearComboBox";
+            apartYearComboBox.Size = new Size(126, 28);
+            apartYearComboBox.TabIndex = 0;
+            apartYearComboBox.SelectedIndexChanged += apartYearComboBox_SelectedIndexChanged;
+            // 
+            // tabPageCrime
+            // 
+            tabPageCrime.Location = new Point(4, 29);
+            tabPageCrime.Margin = new Padding(3, 4, 3, 4);
+            tabPageCrime.Name = "tabPageCrime";
+            tabPageCrime.Padding = new Padding(3, 4, 3, 4);
+            tabPageCrime.Size = new Size(877, 410);
+            tabPageCrime.TabIndex = 3;
+            tabPageCrime.Text = " Преступность";
+            tabPageCrime.UseVisualStyleBackColor = true;
             // 
             // View
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 341);
-            this.Controls.Add(this.tabControl1);
-            this.Name = "View";
-            this.Text = "App";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPageRun.ResumeLayout(false);
-            this.tabPageRun.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPulse)).EndInit();
-            this.tabPageTemp.ResumeLayout(false);
-            this.tabPageTemp.PerformLayout();
-            this.tabPageHouses.ResumeLayout(false);
-            this.tabPageHouses.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(899, 455);
+            Controls.Add(tabControl1);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "View";
+            Text = "App";
+            tabControl1.ResumeLayout(false);
+            tabPageRun.ResumeLayout(false);
+            tabPageRun.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxMin).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPulse).EndInit();
+            tabPageTemp.ResumeLayout(false);
+            tabPageTemp.PerformLayout();
+            tabPageHouses.ResumeLayout(false);
+            tabPageHouses.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

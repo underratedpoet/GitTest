@@ -23,7 +23,7 @@ namespace GitTestApp
             apartRegionComboBox.Items.AddRange(list.RegionsList);
             double pr1r, pr2r, pr3r;
             Apartment.FindPrices(aparts, -1, -1, out pr1r, out pr2r, out pr3r);
-            Price1roomTxtBox.Text = pr1r+""; Price2roomTxtBox.Text = pr2r + ""; Price3roomTxtBox.Text = pr3r + "";
+            Price1roomTxtBox.Text = pr1r + ""; Price2roomTxtBox.Text = pr2r + ""; Price3roomTxtBox.Text = pr3r + "";
             Apartment.SetPricesType(PricesType, aparts, 0);
         }
         private void tabPageTemp_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace GitTestApp
 
         private void View_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void buttonLoad_Click(object sender, EventArgs e)
