@@ -14,6 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Apartment\ApartInfo.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Run\workout_info.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
