@@ -3,6 +3,7 @@ using OxyPlot;
 using OxyPlot.Series;
 
 using GitTestApp.Temp;
+using GitTestApp.Apartments;
 
 
 namespace GitTestApp
@@ -10,17 +11,32 @@ namespace GitTestApp
     public partial class View : Form
     {
         Temperature temp = new Temperature();
-        
+        List<Apartment> aparts = new List<Apartment>();
 
         public View()
         {
             InitializeComponent();
             temp.ReadFromFile(temp.Temps);
+            aparts = Apartment.ReadFromFile();
+            Lists list = new Lists();
+            apartYearComboBox.Items.AddRange(list.Years);
+            apartRegionComboBox.Items.AddRange(list.RegionsList);
+            double pr1r, pr2r, pr3r;
+            Apartment.FindPrices(aparts, -1, -1, out pr1r, out pr2r, out pr3r);
+            Price1roomTxtBox.Text = pr1r+""; Price2roomTxtBox.Text = pr2r + ""; Price3roomTxtBox.Text = pr3r + "";
+            Apartment.SetPricesType(PricesType, aparts, 0);
         }
         private void tabPageTemp_Click(object sender, EventArgs e)
         {
 
         }
+
+        /*private void tabPageHouses_Click(object sender, EventArgs e)
+        {
+            double pr1r, pr2r, pr3r;
+            Apartment.FindPrices(aparts, -1, -1, out pr1r, out pr2r, out pr3r);
+            Price1roomTxtBox.Text = pr1r+""; Price2roomTxtBox.Text = pr2r + ""; Price3roomTxtBox.Text = pr3r + "";
+        }*/
 
         private void buttonTemp(object sender, EventArgs e)
         {
@@ -37,7 +53,7 @@ namespace GitTestApp
 
         private void View_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void buttonLoad_Click(object sender, EventArgs e)
@@ -83,6 +99,22 @@ namespace GitTestApp
         {
             ViewWorkout workout = new ViewWorkout();
             workout.Show();
+        }
+
+        private void apartYearComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            double pr1r, pr2r, pr3r;
+            Apartment.FindPrices(aparts, apartYearComboBox.SelectedIndex, apartRegionComboBox.SelectedIndex, out pr1r, out pr2r, out pr3r);
+            Price1roomTxtBox.Text = pr1r + ""; Price2roomTxtBox.Text = pr2r + ""; Price3roomTxtBox.Text = pr3r + "";
+            Apartment.SetPricesType(PricesType, aparts, apartRegionComboBox.SelectedIndex);
+        }
+
+        private void apartRegionComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            double pr1r, pr2r, pr3r;
+            Apartment.FindPrices(aparts, apartYearComboBox.SelectedIndex, apartRegionComboBox.SelectedIndex, out pr1r, out pr2r, out pr3r);
+            Price1roomTxtBox.Text = pr1r + ""; Price2roomTxtBox.Text = pr2r + ""; Price3roomTxtBox.Text = pr3r + "";
+            Apartment.SetPricesType(PricesType, aparts, apartRegionComboBox.SelectedIndex);
         }
     }
 }
